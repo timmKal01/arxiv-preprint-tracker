@@ -1,0 +1,13 @@
+{
+    "actorSpecification": 1,
+    "name": "arxiv-preprint-tracker",
+    "title": "arXiv Preprint Tracker — New Papers by Keyword/Category",
+    "description": "Track new research preprints on arXiv by keyword and/or category (cs.AI, econ.GN, stat.ML, and more). Get title, authors, abstract, category, and PDF link the moment a paper is submitted.",
+    "version": "0.1",
+    "meta": {
+        "templateId": "custom-no-proxy"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "dockerfile": "../Dockerfile"
+}

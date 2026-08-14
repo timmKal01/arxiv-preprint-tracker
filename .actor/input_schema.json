@@ -1,0 +1,37 @@
+{
+    "title": "arXiv Preprint Tracker Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "keyword": {
+            "title": "Keyword",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Free-text search across title and abstract (e.g. \"prompt injection\", \"protein folding\"). Leave blank to skip keyword filtering."
+        },
+        "category": {
+            "title": "arXiv category",
+            "type": "string",
+            "editor": "textfield",
+            "description": "arXiv category code to limit to, e.g. \"cs.AI\", \"cs.CL\", \"stat.ML\", \"econ.GN\", \"q-bio.GN\". Leave blank for all categories. Full list at arxiv.org/category_taxonomy."
+        },
+        "daysBack": {
+            "title": "Days back",
+            "type": "integer",
+            "editor": "number",
+            "description": "How many days back from today to search, by submission date.",
+            "default": 7,
+            "minimum": 1,
+            "maximum": 90
+        },
+        "maxResults": {
+            "title": "Max results",
+            "type": "integer",
+            "editor": "number",
+            "description": "Maximum number of papers to return, most recently submitted first.",
+            "default": 25,
+            "minimum": 1,
+            "maximum": 100
+        }
+    }
+}

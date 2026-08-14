@@ -1,0 +1,16 @@
+{
+    "name": "arxiv-preprint-tracker",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "Track new arXiv preprints by keyword and/or category via the official arXiv API.",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "apify": "^3.2.6",
+        "cheerio": "^1.0.0"
+    },
+    "scripts": {
+        "start": "node src/main.js"
+    }
+}
