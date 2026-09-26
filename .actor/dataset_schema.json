@@ -1,0 +1,73 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "arxivId",
+                    "title",
+                    "authors",
+                    "primaryCategory",
+                    "categories",
+                    "published",
+                    "updated",
+                    "doi",
+                    "journalRef",
+                    "absUrl",
+                    "pdfUrl"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "arxivId": {
+                        "label": "Arxiv ID",
+                        "format": "text"
+                    },
+                    "title": {
+                        "label": "Title",
+                        "format": "text"
+                    },
+                    "authors": {
+                        "label": "Authors",
+                        "format": "array"
+                    },
+                    "primaryCategory": {
+                        "label": "Primary category",
+                        "format": "text"
+                    },
+                    "categories": {
+                        "label": "Categories",
+                        "format": "array"
+                    },
+                    "published": {
+                        "label": "Published",
+                        "format": "date"
+                    },
+                    "updated": {
+                        "label": "Updated",
+                        "format": "date"
+                    },
+                    "doi": {
+                        "label": "DOI",
+                        "format": "text"
+                    },
+                    "journalRef": {
+                        "label": "Journal ref",
+                        "format": "text"
+                    },
+                    "absUrl": {
+                        "label": "Abs URL",
+                        "format": "link"
+                    },
+                    "pdfUrl": {
+                        "label": "PDF URL",
+                        "format": "link"
+                    }
+                }
+            }
+        }
+    }
+}
